@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>survey</title>
+</head>
+<body>
+    <h1 id="title">Canteen food and hygine survey form</h1>
+    <p id="description">Feel free to share how you Feel</p>
+    <p id="details" class="description-details">Hey! This survey is conducted to test hygine and quality food of canteen. So please take part in this survey
+         so we can improve and give quality food without compromise. Contumer is our god so its our responsiable to give you best food.</p>
+
+    <form class="form" method="post"  action="#mywebsite" id="survey-form">
+        <fieldset class="container">
+            <label id="name-label" for="name">Name <br><input id="name" type="text" placeholder="Enter your name" required></label>
+            <label id="email-label" for="email">Email <br> <input id="email" type="email" placeholder="Enter your email" required></label>
+            <label id="number-label" for="number">Age <br> <input id="number" type="number" placeholder="Age" min="15" max="100"></label>
+            
+            <!-- select dropdown -->
+            <label for="dropdown">Q&#41Which program are you affillite?</label>
+            <select name="select" id="dropdown" required>
+                <option value="">Select current program </option>
+                <option value="1">Bsc. General</option>
+                <option value="2">Bsc.Csit</option>
+                <option value="3">Bit</option>
+                <option value="4">Environment</option>
+                <option value="5">Pefer not to say</option>
+            </select>
+
+            <!-- shift section -->
+            <label class="shift">Your shift</label>
+            <label class="morning" for="morning"><input id="morning" name="shift" type="radio" value="morning" class="inline" checked >Morning</label>
+            <label class="day" for="day"><input id="day" name="shift" type="radio" value="day" class="inline" checked >Day</label>
+ 
+            <!-- canteen number flow section -->
+            <label class="canteen">Q&#41Do you usually go to Canteen?</label>
+            <label class="yes" for="yes"><input id="yes" name="flow" type="radio" value="yes" class="inline" checked >Yes</label>
+            <label class="no" for="no"><input id="no" name="flow" type="radio" value="no" class="inline" checked >No</label>
+ 
+            <!-- food description section -->
+            <label class="food-description">Q&#41If yes What food do you eat there?</label>
+            <label class="checkbox-label-font" for="breakfast"><input type="checkbox" value="breakfast" id="breakfast" class="checkbox" >Breakfast(Somasa, Tea, Egg, Chana)</label>
+            <label class="checkbox-label-font" for="meal"><input type="checkbox" value="meal/dinner" id="meal" class="checkbox" >Meal/Dinner</label>
+            <label class="checkbox-label-font" for="tea"><input type="checkbox" value="tea" id="tea" class="checkbox" >Tea(milk/lemon)</label>
+            <label class="checkbox-label-font" for="lunch"><input type="checkbox" value="lunch" id="lunch" class="checkbox" >Lunch(Somasa, Breadchop, choiwmin)</label>
+            <label class="checkbox-label-font" for="juice"><input type="checkbox" value="juice" id="juice" class="checkbox" >Juice(fruity,coke,fanta etc)</label>
+
+             <!-- Hygine section -->
+             <label class="clean">Q&#41How do you find cleaness and hygiene over there?</label>
+             <label class="good" for="good"><input id="good" name="hygine" type="radio" value="good" class="inline" checked >Good</label>
+             <label class="average" for="average"><input id="average" name="hygine" type="radio" value="average" class="inline" checked >Average, can be improve</label>
+             <label class="worst" for="worst"><input id="worst" name="hygine" type="radio" value="worst" class="inline" checked >Worst, need to improve immediately</label>
+           
+            <!-- food quality section -->
+            <label class="canteen">Q&#41How do you like food there?</label>
+            <label class="good" for="good"><input id="good" name="hygine" type="radio" value="good" class="inline" checked >Good</label>
+            <label class="average" for="average"><input id="average" name="hygine" type="radio" value="average" class="inline" checked >Edible, can be improve more</label>
+            <label class="worst" for="worst"><input id="worst" name="hygine" type="radio" value="worst" class="inline" checked >Worst, need to improve immediately</label>
+
+             <!-- textarea comment -->
+            <label class="comment" for="comment">Write your opinion about Canteen? <br> <textarea name="comment" id="comment" cols="50" rows="12" placeholder="Like this canteen need to improve on....."></textarea></label> 
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    
+</body>
+</html>

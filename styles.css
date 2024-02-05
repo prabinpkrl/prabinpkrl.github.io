@@ -1,0 +1,107 @@
+body{
+    background-image: url(coffee.jpg);
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,p{
+    margin: 5px auto;
+    text-align: center;
+    color: #363535;
+}
+h1{
+    margin: 3rem auto 0 auto;
+}
+p{
+    margin: 8px 0 15px 0;
+    font-size: 20px;
+}
+.description-details{
+    font-size: 17px;
+    font: 200;
+    color: rgb(27, 29, 29);
+    width: 100vh;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.form{
+    border: 2px solid rgba(108, 164, 196, 0.233);
+    width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 0.7rem;
+    max-width: 700px;
+    min-width: 300px;
+    background-color: rgba(192, 190, 197, 0.493);
+}
+fieldset{
+    margin: 15px;
+    border: none;
+}
+
+.container{
+    padding-left: 35px;
+    height: max-content;
+}
+
+label{
+    display: block;
+    color: #202020;
+    font-size: 21px;
+    
+}
+.morning,.yes,.good,.average,.worst,.no,.day,.checkbox-label-font{
+    font-size: 18px;
+}
+.day,.worst,.no,.canteen,.shift,.clean,.food-description{
+    margin-bottom: 12px;
+}
+.clean{
+    margin-top: 12px;
+}
+
+input,select{
+    width: 95%;
+    height: 30px;
+    margin: 7px 0 15px 0 ;
+}
+input,textarea{
+    font-size: 16px;
+}
+
+.inline,.checkbox{
+    width: 16px;
+    margin: 0 0.5em 0;
+    vertical-align:middle;
+    
+}
+.inline{
+    display: inline;
+}
+
+.comment{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+textarea{
+    width: 95%;
+    height: max-content;
+    
+}
+input[type="submit"]{
+    display: block;
+    width: 80%;
+    font-size: 1.1rem;
+    color: #ffffff;
+    height: 2.5em;
+    margin: 0.8em auto 4.5em auto;
+    border: 1px solid  green;
+    border-radius: 20px;
+    background-color: rgb(47, 138, 47);
+       
+}
+
